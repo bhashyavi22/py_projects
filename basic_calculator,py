@@ -1,0 +1,19 @@
+def calculator(num1,num2,operator): 
+    if operator=="+":
+        result=num1+num2
+    elif operator=="-":
+        result=num1-num2
+    elif operator=="*":
+        result=num1*num2
+    elif operator=="/":
+        if num2==0:
+            return "does not possible to divide"
+        else:
+            result=num1/num2
+    else:
+        return "Invalid"
+    return result
+num1=float(input("Enter the number="))
+num2=float(input("Enter the number="))
+operator=input("Enter the operator=")
+print(calculator(num1,num2,operator))
